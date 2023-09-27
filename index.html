@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>Tree Pruning</title>
+<meta name="title" content="Tree Pruning">
+<meta name="dc.title" content="Tree Pruning">
+<meta name="description" content="Tree prun(ing) is an essential part of any gardener's maintenance routine. It helps keep trees healthy and looking their best by removing dead or diseased branches, as well as controlling the size and shape. Done correctly, it can even improve a tree’s appearance and structure!">
+<meta name="keywords" content="Tree Pruning,Tree Pruning">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://business-info-olb1.netlify.app/index.html">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,400,500,600,700,800,900&amp;display=swap">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/" alt="Tree Pruning" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<style type="text/css"> 
+*{
+font-family: 'Kumbh Sans', sans-serif;
+}
+.ya20249aff8419a5dbc2f6b7830960229 .card .card-header h6 span{
+font-size: 1.5rem;
+}
+.y5b222478796537e38043c7cd5f82b2e3{
+background: rgba(0, 0, 0, 0.6);
+text-align: center;
+}
+.dropdown-menu{
+top:79%;
+max-width: 800px;
+overflow-x: auto;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .row-item.xa7f9f52b5c0dd0a9cd2abc9ea943dbfb{
+background: #cbe8ee;
+}
+.xa7f9f52b5c0dd0a9cd2abc9ea943dbfb a{
+color:#ff8c22!important;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .v0d093ddb1a83520a47806e62530865a1 *{
+color:#000000;
+}
+.xa7f9f52b5c0dd0a9cd2abc9ea943dbfb{
+background:#eae8e4!important ;
+}
+footer{
+background:#0c0c0c;
+color:#ffffff;
+}
+footer a{
+color:#ffffff;
+text-decoration: underline;
+}
+.vb7759187e96285fd164be4bbaa292f94{
+background:#ffffff;
+}
+.vb7759187e96285fd164be4bbaa292f94 p,.vb7759187e96285fd164be4bbaa292f94 span,.vb7759187e96285fd164be4bbaa292f94 label{
+font-size:16px!important;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .xa7f9f52b5c0dd0a9cd2abc9ea943dbfb *{
+color:#000000;
+}
+.ec0653f10f5e334e7a2c5d78d963d0d1a{
+color: #a8a8a8;
+font-size: 19.9px;
+margin-bottom: 21.2px;
+}
+footer *{
+font-size:16px !important;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .row-item{
+padding: 3rem;
+padding-top: 3.7rem;
+height: 100%;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 h4{
+font-size:24px!important;
+}
+.y5b222478796537e38043c7cd5f82b2e3 *{
+color: white !important;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .fef84abe6f0316ff391115546eb88bd0f{
+margin-bottom: 1.5rem;
+}
+.y0ddf9e740e79cfb9e07a3be6ad931966{
+position: relative;
+z-index: 1;
+}
+html{
+scroll-behavior: smooth;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .row-item.ed1068932e7b7e458840bb2ef67be3da5{
+background: #f3e0de;
+}
+.u2cea0bd9018556428b931f651eeb02f1{
+font-size:45px!important;
+}
+.y85b02609c78490f629f4b12a61df90ea:hover{
+box-shadow: 0 49.9px 50.5px -25px rgb(0 0 0 / 30%);
+transform: rotate(-2deg) scale(1.03);
+}
+.ya20249aff8419a5dbc2f6b7830960229 .card .card-header h6.collapsed{
+color: #191c69;
+}
+.a64974795f81631759c578e227396c62d i{
+border-radius: 50%;
+width: 37px;
+text-align: center;
+height: 37.2px;
+}
+iframe{
+border: none!important;
+}
+.ed1068932e7b7e458840bb2ef67be3da5 a{
+color:#ff9127!important;
+}
+.navbar-toggler span{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid lightgrey;
+border-radius: 3px;
+}
+.f3d89e1ddc3a2bed4cf5b019646312708{
+font-weight: inherit;
+background-image: linear-gradient(120deg, #ffd567 0%, #ffd567 100%);
+background-repeat: no-repeat;
+background-size: 100% 30%;
+background-position: 0 90%;
+transition: background-size 0.2s ease-in;
+}
+.t7fd97fb98ecc4d0eda62cf1eea06a60f{
+position: relative;
+min-height: 30px
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .row-item.v0d093ddb1a83520a47806e62530865a1{
+background: #f0eeea;
+}
+.t9f2690e153e6432e1f3c8d23c1ade7f9{
+color: #4a4a4a;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .y9ed820033b7e17c9d7596ab55f04b8e8{
+background:#c1bebe!important;
+}
+.bc6c1c1daaf38d4aeaf6e730f7a49c0d8{
+background:#f2f0ec;
+color:#080808;
+}
+.navbar a{
+font-size: 18.5px!important;
+font-weight: bold;
+}
+.bc6c1c1daaf38d4aeaf6e730f7a49c0d8 a,.vb7759187e96285fd164be4bbaa292f94 a{
+color:#080808!important;
+text-decoration: underline !important;
+}
+body{
+color: #2e2e2e;
+}
+.aa4f5cc28000a2e3b6904f1a40f6aaff8{
+font-size: 14px;
+}
+.a3f7f57ed20bdc8875b710ed4fbe36223{
+font-size: 19.8px;
+font-weight: bold;
+}
+.ya20249aff8419a5dbc2f6b7830960229 .card .card-header{
+background-color: #ffffff;
+padding: 0;
+border-bottom-color: #ececec;
+}
+.nav-link{
+color: #000000!important;
+
+}
+.af2b8c590c7c941ff8f0730f84a420f69{
+font-size: 45px!important;
+}
+.tdddd2837645c4c7b0b1355f64043384e{
+background-color:#ffc107!important;
+border-color:#ffc107!important;
+color:#000000!important;
+}
+.ya20249aff8419a5dbc2f6b7830960229 .card{
+position: relative;
+z-index: 1;
+margin-bottom: 1.5rem;
+}
+.ya20249aff8419a5dbc2f6b7830960229 .card .card-body{
+padding: 1.75rem 2rem;
+}
+.x4f43f6f893953746d3ae667d948e9cd9:hover,.f3d89e1ddc3a2bed4cf5b019646312708:hover{
+background-size: 100% 100% !important;
+background-image: linear-gradient(120deg,  0%,  100%) !important;
+background-repeat: no-repeat !important;
+background-position: 0 90% !important;
+transition: background-size 0.2s ease-in !important;
+}
+.cf2b99168f218437df90df7a26a97ec16{
+font-size: 2rem !important;
+}
+.vb7759187e96285fd164be4bbaa292f94 *{
+color:#000000!important;
+}
+ul{
+list-style: circle;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .card-img{
+margin-bottom: 1.7rem;
+text-align: left;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .row-item.y9ed820033b7e17c9d7596ab55f04b8e8{
+background: #d3d0d0;
+}
+.c73b69e882ff3a86e9423dc4038f80e53{
+width: 100%;
+max-height: 720px;
+object-fit: cover;
+object-position: center;
+display: block;
+max-height: 100%;
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .v0d093ddb1a83520a47806e62530865a1{
+background:#eae8e4!important ;
+}
+.ya20249aff8419a5dbc2f6b7830960229 .card:last-child{
+margin-bottom: 0;
+}
+.ya20249aff8419a5dbc2f6b7830960229 .card .card-header h6{
+cursor: pointer;
+padding: 1.75rem 2rem;
+color: #3f43fd;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.bc6c1c1daaf38d4aeaf6e730f7a49c0d8 p,.bc6c1c1daaf38d4aeaf6e730f7a49c0d8 a,.bc6c1c1daaf38d4aeaf6e730f7a49c0d8 span,.bc6c1c1daaf38d4aeaf6e730f7a49c0d8 label{
+font-size:16px!important;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .xa7f9f52b5c0dd0a9cd2abc9ea943dbfb{
+background:#bcd9df!important;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .ed1068932e7b7e458840bb2ef67be3da5 *{
+color:#000000;
+}
+.btn-md{
+padding: 15.3px 29.9px;
+border-radius: 0;
+}
+.y9ed820033b7e17c9d7596ab55f04b8e8 a{
+color:#ff9127!important;
+}
+.a64974795f81631759c578e227396c62d i:hover{
+background: white;
+color: #ffc208;
+border-radius: 50%;
+width: 36.6px;
+text-align: center;
+height: 37.1px;
+}
+.v0d093ddb1a83520a47806e62530865a1 a{
+color:#ff8c22!important;
+}
+.v26cd5a5e46f8678a0ad48a47507a415a{
+max-height: 300px;
+overflow-y: auto;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 p,.{special_content1_class} a,.wd20c64e7df7434d92ab6f8637cfd44f1 label{
+font-size:16px!important;
+}
+.x51be48f0040d5a2d7eb8cd4ca7bfe383{
+font-size:16px!important;
+color: #656565;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .ed1068932e7b7e458840bb2ef67be3da5{
+background:#eddad8!important;
+}
+.e4b96256f807d992c6696a3901527df87{
+text-decoration: underline!important;color:#ff8117!important
+}
+.vb7759187e96285fd164be4bbaa292f94 a{
+font-size:16px;
+}
+.ya20249aff8419a5dbc2f6b7830960229 .card .card-body p:last-child{
+margin-bottom: 0;
+}
+.y85b02609c78490f629f4b12a61df90ea{
+transition: all 0.3s;
+border-radius: 30px;
+}
+.v0d093ddb1a83520a47806e62530865a1 *{
+color:#000000;
+}
+.abec77aaef4d0a3daf8a4d7bb29a28c89{
+background-color: #0d0d0d;
+font-size: 30.3px;
+height: 55.8px;
+min-width: 56.5px;
+padding: 0.7rem;
+padding-top: 13.1px;
+color: #fff !important;
+border: 1px solid #060606;
+border-radius: 50%;
+}
+a{
+text-decoration: none;
+}
+.ya20249aff8419a5dbc2f6b7830960229 .card .card-header h6.collapsed span{
+-webkit-transform: rotate(-180deg);
+transform: rotate(-180deg);
+}
+.nav-item{
+padding-left:7.7px;
+padding-right:7.7px;
+padding-top:4.8px;
+padding-bottom:5.2px;
+}
+.ya20249aff8419a5dbc2f6b7830960229{
+position: relative;
+z-index: 1;
+}
+.wd20c64e7df7434d92ab6f8637cfd44f1 .y9ed820033b7e17c9d7596ab55f04b8e8 *{
+color:#000000;
+}
+ 
+@media only screen and (max-width:1000px) {
+.t7fd97fb98ecc4d0eda62cf1eea06a60f {
+min-height: 0px !important;
+}
+.u2cea0bd9018556428b931f651eeb02f1 {
+font-size: 20px;
+}
+.ec0653f10f5e334e7a2c5d78d963d0d1a {
+font-size: 15px !important;
+}
+.w3eabaf9cfee75b92ed1ec764e2bccc96{
+padding-bottom: 0px !important;
+}
+} 
+</style>
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "ProfessionalService","url": "https://business-info-olb1.netlify.app/",
+"address": {
+"@type": "PostalAddress"} }
+</script>
+<script type="application/ld+json">
+{
+"@type": "WebPage",
+"@context": "http://www.schema.org","lastReviewed": "2021-12-01",
+"mainContentOfPage": {
+"about": {"url": "https://business-info-olb1.netlify.app/index.html","name": "Tree Pruning","description": "Tree Pruning",
+"disambiguatingDescription": "Tree Pruning"},
+"accessibilitySummary": "Tree Pruning"},
+"keywords": ["Tree Pruning"],
+"award": ["Best Tree Pruning"],
+"teaches": ["Tree Pruning"],
+"educationalUse": ["Tree Pruning"],
+"text": "Tree Pruning",
+"workExample": {
+"about": {"url": "https://business-info-olb1.netlify.app/index.html"
+}
+},
+"citation": {
+"@type": "CreativeWork",
+"about": {
+"url": "https://business-info-olb1.netlify.app/index.html"}
+},
+"hasPart":[
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"description":"In this section we will answer the most common questions to Tree Pruning",
+"alternativeHeadline": "The most frequently asked questions about Tree Pruning",
+"url": "index.html",
+"mainEntity": [{
+"@type": "Question","name": "What type of tree pruning services do you offer?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "We offer a variety of professional tree pruning services, including deadwood removal, crown thinning, crown lifting and hedge trimming."
+}
+},{
+"@type": "Question","name": "How often should I have my trees pruned?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "The frequency of tree pruning varies depending on the species and size of the tree but generally should be done every 3-5 years."
+}
+},{
+"@type": "Question","name": "What safety measures do you take when performing tree pruning?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "We use specialized equipment and follow all safety protocols to ensure a safe work environment for both our staff and clients."
+}
+}]
+}]
+}
+</script><script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Product",
+"name": "Tree Pruning",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3","ratingCount": "3",
+"reviewCount": "4"
+}
+}
+</script></head>
+<body>
+<nav class="navbar-expand-lg navbar">
+<a class="navbar-brand" href="https://business-info-olb1.netlify.app/index.html"  ></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon  fa fa-bars"></span></button><div class="navbar-collapse collapse" id="navbarSupportedContent">
+<ul class="navbar-nav d-flex align-items-center ml-auto"><li class="nav-item"><a class="nav-link x4f43f6f893953746d3ae667d948e9cd9" href="https://business-info-olb1.netlify.app/news.html" rel="nofollow" >News</a></li>
+	
+<li class="nav-item  dropdown">
+<a class="dropdown-toggle x4f43f6f893953746d3ae667d948e9cd9 nav-link" href="https://business-info-olb1.netlify.app/index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Tree Pruning</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/index.html"  >Tree Pruning</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/tree-pruning.html"  >Tree Pruning</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/tree-removal.html"  >Tree Removal</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/stump-grinding.html"  >Stump Grinding</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/emergency-services.html"  >Emergency Services</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/planting-and-transplanting.html"  >Planting and Transplanting</a>
+	
+<li class="nav-item dropdown ">
+<a class="nav-link dropdown-toggle x4f43f6f893953746d3ae667d948e9cd9" href="https://business-info-olb1.netlify.app/tree-removal-1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Tree Removal</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/tree-removal-1.html"  >Tree Removal</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/crown-reduction.html"  >Crown Reduction</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/shaping-and-thinning.html"  >Shaping and Thinning</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/deadwood-removal.html"  >Deadwood Removal</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/cabling-and-bracing.html"  >Cabling and Bracing</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/root-pruning.html"  >Root Pruning</a>
+	
+<li class="dropdown  nav-item">
+<a class="x4f43f6f893953746d3ae667d948e9cd9 dropdown-toggle nav-link" href="https://business-info-olb1.netlify.app/stump-grinding-1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Stump Grinding</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/stump-grinding-1.html"  >Stump Grinding</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/hazardous-tree-removal.html"  >Hazardous Tree Removal</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/underground-utility-line-protection.html"  >Underground Utility Line Protection</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/logging-operations.html"  >Logging Operations</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/storm-damage-cleanup.html"  >Storm Damage Cleanup</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/land-clearing-services.html"  >Land Clearing Services</a>
+	
+<li class=" dropdown nav-item">
+<a class="dropdown-toggle x4f43f6f893953746d3ae667d948e9cd9 nav-link" href="https://business-info-olb1.netlify.app/emergency-services-1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Emergency Services</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/emergency-services-1.html"  >Emergency Services</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/surface-root-removal.html"  >Surface Root Removal</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/soil-preparation.html"  >Soil Preparation</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/mulching-options.html"  >Mulching Options</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/wood-chipper-services.html"  >Wood Chipper Services</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/rock-grinding-services.html"  >Rock Grinding Services</a>
+	
+<li class="nav-item  dropdown">
+<a class="nav-link dropdown-toggle x4f43f6f893953746d3ae667d948e9cd9" href="https://business-info-olb1.netlify.app/planting-and-transplanting-1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Planting and Transplanting</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/planting-and-transplanting-1.html"  >Planting and Transplanting</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/hazardous-situation-control.html"  >Hazardous Situation Control</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/fallen-branch-or-limb-clearance.html"  >Fallen Branch or Limb Clearance</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/power-lines-repairreplacement.html"  >Power Lines RepairReplacement</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/lightning-strike-response.html"  >Lightning Strike Response</a>
+<a class="dropdown-item" href="https://business-info-olb1.netlify.app/wind-damage-remediation.html"  >Wind Damage Remediation</a>
+<li class="nav-item"><a class="x4f43f6f893953746d3ae667d948e9cd9 nav-link" rel=nofollow href="https://business-info-olb1.netlify.app/about-us.html">About Us</a>
+</li></ul>
+</div>
+</nav>
+<div class="vb7759187e96285fd164be4bbaa292f94 container-fluid"><div class=" row pb-5">
+<div class="container pt-3">
+<div class="row">
+<div class=" text-center col-lg-12" id="Tree Pruning">
+<h1 class="u2cea0bd9018556428b931f651eeb02f1 mb-0 text-dark">Tree Pruning</h1> 
+<h2 class="t9f2690e153e6432e1f3c8d23c1ade7f9 ec0653f10f5e334e7a2c5d78d963d0d1a"><b>Tree Pruning</b></h2></div>
+<div class=" m-auto col-lg-12">
+<div class="content">
+
+Tree prun(ing) is an essential part of any gardener's maintenance routine. It helps keep trees healthy and looking their best by removing dead or diseased branches, as well as controlling the size and shape. Done correctly, it can even improve a tree’s appearance and structure!<br /> <br /> However, it's important to remember that tree pruning isn't always necessary. Over-pruning can actually be detrimental to a tree's health, so unless there are clear signs of disease or decay, it should usually be avoided. Additionally, pruning should never be done during the heat of summer – this could result in serious damage to the tree. <br /> <br /> Moreover, when planning a pruning project, it's vital to consider what type of species you're dealing with. Different species require different approaches; coniferous trees respond better to thinning whereas deciduous trees tend to need more structural shaping. Incorrectly pruned trees may become unbalanced and top-heavy which can lead to disastrous consequences such as breakage or uprooting in strong winds!<br /> <br /> Finally, although many people believe that they can perform the task themselves with basic tools, professional advice is often recommended for larger jobs or more complex situations. The experts have extensive training and experience in all aspects of tree care – plus they know exactly how much (or little!) needs to be done for each individual situation! So if you’re not sure where to start with your own project then it’s always advisable to get some professional help first! <br /> <br /> All in all, proper tree prun(ing) is essential for keeping your garden looking its best - but caution must be taken as incorrect techniques can cause lasting damage! With these simple tips in mind hopefully you'll now have enough knowledge to make an informed decision about your own tree pruning projects - just don't forget: safety first!!</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div><div class="py-5 y0ddf9e740e79cfb9e07a3be6ad931966 bc6c1c1daaf38d4aeaf6e730f7a49c0d8">
+<div class="container">
+<div class="justify-content-center row">
+<div class="col-lg-6">
+<div class="text-center pb-3">
+<h3> Frequently Asked Questions</h3>
+<div class="line"></div>
+</div>
+</div>
+</div>
+<div class="justify-content-center row">
+<div class="col-lg-8">
+<div class="accordion ya20249aff8419a5dbc2f6b7830960229" id="faqAccordion">
+<div class="card border-0">
+<div class="card-header" id="heading0">
+<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0"> What type of tree pruning services do you offer?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse0" aria-labelledby="heading0" data-parent="#faqAccordion">
+<div class="card-body">We offer a variety of professional tree pruning services, including deadwood removal, crown thinning, crown lifting and hedge trimming.</div>
+</div>
+</div>
+<div class="border-0 card">
+<div class="card-header" id="heading1">
+<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"> How often should I have my trees pruned?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse1" aria-labelledby="heading1" data-parent="#faqAccordion">
+<div class="card-body">The frequency of tree pruning varies depending on the species and size of the tree but generally should be done every 3-5 years.</div>
+</div>
+</div>
+<div class="card border-0">
+<div class="card-header" id="heading2">
+<h6 class="collapsed mb-0" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"> What safety measures do you take when performing tree pruning?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse2" aria-labelledby="heading2" data-parent="#faqAccordion">
+<div class="card-body">We use specialized equipment and follow all safety protocols to ensure a safe work environment for both our staff and clients.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="pt-5 py-4 container" >
+<div class="row"><div class="col-lg-3"><p><a class="x4f43f6f893953746d3ae667d948e9cd9" href="https://business-info-olb1.netlify.app/sitemap.html" rel="nofollow">Sitemap</a></p>
+<p><a class="x4f43f6f893953746d3ae667d948e9cd9" href="https://business-info-olb1.netlify.app/privacy-policy.html" rel="nofollow">Privacy Policy</a></p>
+<p><a class="x4f43f6f893953746d3ae667d948e9cd9" href="https://business-info-olb1.netlify.app/about-us.html" rel="nofollow">About Us</a></p>
+</p>
+</div></div>
+</div>
+</footer>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+var dropdowns = document.querySelectorAll('.dropdown-hover');
+function showDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'block';
+}
+function hideDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'none';
+}
+function handleClick(event) {
+var target = event.target;
+window.location.href = target.getAttribute('href');
+}
+dropdowns.forEach(function(dropdown) {
+dropdown.addEventListener('mouseenter', showDropdown);
+dropdown.addEventListener('mouseleave', hideDropdown);
+var dropdownMenu = dropdown.querySelector('.dropdown-toggle');
+dropdownMenu.addEventListener('click', handleClick);
+});
+});
+</script>
+</body>
+</html>
